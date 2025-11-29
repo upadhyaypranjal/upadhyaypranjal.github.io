@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranjal Upadhyay | Portfolio</title>
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+
+  <!-- Font Awesome -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+    defer
+  ></script>
+
+  <!-- Particles.js -->
+  <script
+    src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+    defer
+  ></script>
+
+</head>
+
+<body>
+  <!-- CYBER-ELECTRONICS BACKGROUND LAYERS -->
+  <div class="cyber-bg">
+    <div class="cyber-line" style="left:10%; animation-delay:0s;"></div>
+    <div class="cyber-line" style="left:25%; animation-delay:1.4s;"></div>
+    <div class="cyber-line" style="left:40%; animation-delay:0.7s;"></div>
+    <div class="cyber-line" style="left:55%; animation-delay:1.9s;"></div>
+    <div class="cyber-line" style="left:70%; animation-delay:0.4s;"></div>
+    <div class="cyber-line" style="left:85%; animation-delay:1.2s;"></div>
+    
+ <div class="cyber-wires">
+  <div class="wire wire-1"></div>
+  <div class="wire wire-2"></div>
+  <div class="wire wire-3"></div>
+  <div class="wire wire-4"></div>
+
+  <div class="current current-1"></div>
+  <div class="current current-2"></div>
+  <div class="current current-3"></div>
+</div>
+  </div>
+  <div class="background-gradient"></div>
+  <div id="particles-js"></div>
+  <div class="grid-overlay"></div>
+<!-- Futuristic Background Objects -->
+<div class="drone"></div>
+<div class="drone2"></div>
+<div class="satellite"></div>
+<div class="pcb-trace"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- WELCOME SCREEN -->
+  <div id="welcome-screen">
+    <div class="welcome-inner">
+      <span class="welcome-chip">Portfolio v2.0</span>
+      <h1 class="welcome-text neon-flicker">
+  Welcome, Recruiter <span class="wave">👋</span>
+</h1>
+
+      <p class="welcome-subtext">Initializing Pranjal's universe…</p>
+      <div class="welcome-loader">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+ <header class="header">
+  <nav class="nav-container">
+    <a href="#home" class="logo">
+      <span class="logo-orb"></span>
+      PRANJAL<span class="accent">.</span>
+    </a>
+
+    <ul class="nav-list">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#positions" class="nav-link">Positions</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+
+      
+    </ul>
+  
+  
+<a href="https://drive.google.com/file/d/1lgZmaVYLaAOTyeo5ayMLV41Hxp_TfiZ5/view?usp=sharing"
+   target="_blank"
+   class="btn nav-resume-btn">
+   <span><i class="fas fa-download"></i> Download Resume</span>
+</a>
+
+
+  
+  </nav>
+
+</header>
+
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-container">
+        <div class="hero-content reveal-up">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title gradient-text">Pranjal Upadhyay</h1>
+          <h2 class="hero-subtitle">
+  <span id="typed-degree"></span><br />
+  <span id="typed-branch"></span><br />
+  <span id="typed-college"></span>
+</h2>
+
+
+          <p class="hero-tagline">
+            I design and prototype <span class="accent">intelligent hardware</span> — 
+            from high-speed <span class="glitch-text">VLSI architectures</span> to 
+            <span class="glitch-text">IoT-driven embedded systems</span> that talk to the cloud.
+          </p>
+
+          <div class="hero-skill-rotator">
+            <span class="rotator-label">Domains:</span>
+            <span id="skill-rotator" class="skill-rotator">VLSI</span>
+          </div>
+
+          <div class="hero-socials">
+            <a
+              href="https://www.linkedin.com/in/pranjalupadhyay0142"
+              target="_blank"
+              class="social-icon"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/upadhyaypranjal"
+              target="_blank"
+              class="social-icon"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="mailto:pranjal2004upadhyay@gmail.com"
+              class="social-icon"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="hero-buttons">
+     <a href="hire-me.html"
+   target="_blank"
+   class="btn btn-outline">
+  <i class="fas fa-briefcase"></i>
+  Hire Me
+</a>
+
+
+</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pranjal2004upadhyay@gmail.com"
+   target="_blank"
+   class="btn btn-outline">
+  <i class="fas fa-envelope"></i> Contact Me
+</a>
+
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card floating-card">
+              <span class="stat-value">3</span><span class="plus">+</span>
+              <span class="stat-label">Years in ECE</span>
+            </div>
+            <div class="stat-card floating-card">
+              <span class="stat-value">6</span><span class="plus">+</span>
+              <span class="stat-label">Hardware / IoT Projects</span>
+            </div>
+            <div class="stat-card floating-card">
+              <span class="stat-value">5</span><span class="plus">+</span>
+              <span class="stat-label">EDA / Design Tools</span>
+            </div>
+            <div class="stat-card floating-card">
+              <span class="stat-value">4</span><span class="plus">+</span>
+              <span class="stat-label">Leadership Roles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-up">
+          <div class="neon-orbit">
+            <div class="neon-orbit-ring ring-1"></div>
+            <div class="neon-orbit-ring ring-2"></div>
+            <div class="neon-orbit-ring ring-3"></div>
+
+            <div class="image-glass">
+              <div class="image-border-glow"></div>
+              <img
+                src="assets/pr.jpg"
+                alt="Pranjal Upadhyay"
+                class="profile-image"
+              />
+            </div>
+
+            <div class="floating-pill pill-top-right">
+              <i class="fas fa-microchip"></i>
+              <span>VLSI • ASIC</span>
+            </div>
+            <div class="floating-pill pill-bottom-left">
+              <i class="fas fa-wifi"></i>
+              <span>IoT • Embedded</span>
+            </div>
+            <div class="floating-pill pill-bottom-right">
+              <i class="fas fa-rocket"></i>
+              <span>Placement Coord.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about reveal-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Hardware-focused engineer with a creator’s mindset</p>
+        </div>
+        <div class="about-grid glass-panel">
+          <p class="about-text">
+            I’m a 3rd-year Electronics and Communication Engineering student specializing in
+            <span class="accent">digital system design, VLSI, and embedded systems</span>.
+            I love taking ideas from whiteboard to working silicon or hardware prototypes — 
+            whether it’s a <span class="accent">Kogge-Stone adder</span>
+            or an <span class="accent">ESP32-based IoT system</span>.
+          </p>
+          <p class="about-text">
+            My work spans Verilog modeling, PCB design, IoT architectures, and hands-on labs at
+            <strong>Semi-Conductor Laboratory (SCL)</strong>. I’m currently exploring
+            <span class="accent">EDA flows, ASIC design, and high-speed digital architectures</span>,
+            while actively contributing to my institute’s culture as a
+            <strong>Placement Coordinator</strong> and member of the
+            <strong>Electronics Club, IIIT Kurnool</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills reveal-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">A stack that bridges hardware and software</p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Row 1 -->
+          <div class="skill-category glass-panel">
+            <h3>Programming</h3>
+            <p class="skill-note">Logic that powers hardware & analytics.</p>
+            <div class="skill-tags">
+              <span>C</span><span>Python</span><span>Verilog</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <h3>Networking &amp; Protocols</h3>
+            <p class="skill-note">Moving bits reliably between systems.</p>
+            <div class="skill-tags">
+              <span>UART</span><span>SPI</span><span>I²C</span><span>TCP/IP</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <h3>Circuit &amp; System Design</h3>
+            <p class="skill-note">From simulation to real hardware.</p>
+            <div class="skill-tags">
+              <span>LTspice</span><span>Altium Designer</span><span>KiCad</span><span>MATLAB</span>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="skill-category glass-panel">
+            <h3>Embedded Platforms</h3>
+            <p class="skill-note">Edge devices that sense &amp; act.</p>
+            <div class="skill-tags">
+              <span>ESP32</span><span>Raspberry Pi</span><span>STM32</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <h3>Data Science &amp; ML</h3>
+            <p class="skill-note">Finding patterns in data.</p>
+            <div class="skill-tags">
+              <span>Pandas</span><span>NumPy</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <h3>Analytics &amp; BI Tools</h3>
+            <p class="skill-note">Telling stories with dashboards.</p>
+            <div class="skill-tags">
+              <span>Power BI</span><span>Tableau</span><span>Excel</span><span>Google Sheets</span>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="skill-category glass-panel">
+            <h3>Databases &amp; Cloud</h3>
+            <p class="skill-note">Storing and streaming data.</p>
+            <div class="skill-tags">
+              <span>SQL</span><span>Firebase</span><span>ThingSpeak</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <h3>Dev &amp; Workflow</h3>
+            <p class="skill-note">Tools that keep projects moving.</p>
+            <div class="skill-tags">
+              <span>Git</span><span>VS Code</span><span>Jupyter Notebook</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience reveal-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">Where theory met silicon.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item glass-panel">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content timeline-align-right">
+              <div class="timeline-text">
+                <span class="timeline-date">May 2025 – June 2025</span>
+                <h3 class="timeline-title">Summer Intern</h3>
+                <p class="timeline-institute highlight-institute">Semi-Conductor Laboratory (SCL)</p>
+                <p class="timeline-institute timeline-institute-sub">
+                  Ministry of Electronics &amp; Information Technology (MeitY),
+                  Government of India
+                </p>
+                <ul class="timeline-details">
+                  <li>ESD testing &amp; characterization of advanced VLSI devices.</li>
+                  <li>Worked on MCRDAS 80-pin packaged semiconductor devices.</li>
+                  <li>Hands-on experience in industrial semiconductor test workflows.</li>
+                </ul>
+                <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Mohali, Punjab, India</p>
+              </div>
+              <a href="https://www.scl.gov.in/" target="_blank" class="logo-link">
+                <img src="assets/logos/scllogo.png" alt="SCL Logo" class="timeline-logo hologram-logo tilt-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education reveal-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Foundations that shaped my curiosity.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item glass-panel">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content timeline-align-right">
+              <div class="timeline-text">
+                <span class="timeline-date">2023 – 2028 (expected)</span>
+                <h3 class="timeline-title college-name">Indian Institute of Information Technology Design and Manufacturing, Kurnool</h3>
+                <p class="timeline-institute main-degree">
+                  Integrated Bachelor and Master of Technology in Electronics &amp; Communication Engineering
+                </p>
+                <p class="timeline-desc minor-degree">Minor in Internet of Things</p>
+                <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Kurnool, Andhra Pradesh, India</p>
+              </div>
+              <a href="https://iiitk.ac.in/" target="_blank" class="logo-link">
+                <img src="assets/logos/clg.png" alt="IIITDM Kurnool Logo" class="timeline-logo hologram-logo tilt-logo" />
+              </a>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-panel">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content timeline-align-right">
+              <div class="timeline-text">
+                <span class="timeline-date">2022</span>
+                <h3 class="timeline-title">St. Clare's Senior Secondary School</h3>
+                <p class="education-level">Senior Secondary Education – CBSE</p>
+                <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Agra, Uttar Pradesh, India</p>
+              </div>
+              <a href="http://stclaresagra.org/" target="_blank" class="logo-link">
+                <img src="assets/logos/scs.png" alt="St Clare's Logo" class="timeline-logo hologram-logo tilt-logo" />
+              </a>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-panel">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content timeline-align-right">
+              <div class="timeline-text">
+                <span class="timeline-date">2020</span>
+                <h3 class="timeline-title">St. Peter's College</h3>
+                <p class="education-level">Secondary Education – ICSE</p>
+                <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Agra, Uttar Pradesh, India</p>
+              </div>
+              <a href="https://www.stpetersagra.org.in/" target="_blank" class="logo-link">
+                <img src="assets/logos/spc.png" alt="St Peter's Logo" class="timeline-logo hologram-logo tilt-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects reveal-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Things I’ve actually built.</p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card glass-panel tilt">
+            <div class="project-image">
+              <img src="assets/vlsi.jpg" alt="Kogge-Stone Adder" />
+              <span class="project-chip">VLSI • ASIC</span>
+            </div>
+            <div class="project-info">
+              <div class="project-date" style="font-size: 0.9em; opacity: 0.8; margin-bottom: 0.5rem;">
+                November, 2025
+              </div>
+
+              <h3 class="project-title">32-bit Kogge-Stone Adder</h3>
+              <p class="project-desc">
+                ASIC Design: RTL to GDSII using Cadence Innovus &amp; Genus.
+                Implemented in 90 nm &amp; 180 nm CMOS with focus on speed and area.
+              </p>
+              <div class="project-tags">
+                <span>Verilog</span><span>ASIC</span><span>Cadence</span>
+              </div>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/upadhyaypranjal/8-Bit-Kogge-Stone-Adder"
+                  target="_blank"
+                  class="btn-project"
+                >
+                  <i class="fab fa-github"></i> View Project
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/16EzEW6QHzN56wiuzSiyNSi6wAJXXszp2/view?usp=sharing"
+                  class="btn-project btn-report"
+                >
+                  <i class="fas fa-file-alt"></i> View Report
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-panel tilt">
+            <div class="project-image">
+              <img src="assets/evm.jpg" alt="ESP32 EVM" />
+              <span class="project-chip">IoT • Embedded</span>
+            </div>
+            <div class="project-info">
+              <div class="project-date" style="font-size: 0.9em; opacity: 0.8; margin-bottom: 0.5rem;">
+                April, 2025
+              </div>
+
+              <h3 class="project-title">ESP32-Based Electronic Voting Machine</h3>
+              <p class="project-desc">
+                Electronic Voting Machine using ESP32 &amp; Raspberry Pi with Python backend and
+                ThingSpeak integration for secure data logging.
+              </p>
+              <div class="project-tags">
+                <span>ESP32</span><span>Python</span><span>IoT</span>
+              </div>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/upadhyaypranjal/ESP32-based-Electronic-Voting-Machine"
+                  target="_blank"
+                  class="btn-project"
+                >
+                  <i class="fab fa-github"></i> View Project
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1qYBeHG-hM8x4lQhtKyg2EolLvxqs_0mr/view?usp=sharing"
+                  class="btn-project btn-report"
+                >
+                  <i class="fas fa-file-alt"></i> View Report
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-panel tilt">
+            <div class="project-image">
+              <img src="assets/pcb.png" alt="Motor Driver Circuit" />
+              <span class="project-chip">PCB Design • Power Electronics</span>
+            </div>
+            <div class="project-info">
+              <div class="project-date" style="font-size: 0.9em; opacity: 0.8; margin-bottom: 0.5rem;">
+                October, 2025
+              </div>
+
+              <h3 class="project-title">Motor Driver Circuit</h3>
+              <p class="project-desc">
+                Designed and simulated a high-efficiency motor driver circuit.
+                Performed schematic capture and PCB layout with focus on thermal management.
+              </p>
+              <div class="project-tags">
+                <span>KiCad</span><span>Circuit Design</span><span>LTspice</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" target="_blank" class="btn-project">
+                  <i class="fab fa-github"></i> View Project
+                </a>
+                <a href="#" class="btn-project btn-report">
+                  <i class="fas fa-file-alt"></i> View Report
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+   <!-- CERTIFICATIONS -->
+<section id="certifications" class="section certifications reveal-up">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-subtitle">Structured learning along the way.</p>
+    </div>
+
+    <div class="timeline">
+      <!-- VSD Certification -->
+      <div class="timeline-item glass-panel">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content timeline-align-right">
+          <div class="timeline-text">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">VSD – Design Process Linkages</h3>
+            <p class="timeline-institute">
+              Components in CMOS Process
+            </p>
+            <p class="timeline-institute-sub">
+              VLSI System Design (VSD)
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1MUu9JjN53Lu4f3wYLZGjUM13NjDoevlY/view?usp=sharing"
+              class="btn-cert-timeline"
+              target="_blank"
+            >
+              View Certificate
+            </a>
+          </div>
+
+          <a
+            href="https://www.vlsisystemdesign.com/"
+            target="_blank"
+            class="logo-link"
+          >
+            <img
+              src="assets/logos/vsd.png"
+              alt="VSD Logo"
+              class="timeline-logo hologram-logo tilt-logo"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- UAV / Drone Certification -->
+      <div class="timeline-item glass-panel">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content timeline-align-right">
+          <div class="timeline-text">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">Capacity Building for HRD in UAV</h3>
+            <p class="timeline-institute">
+              Drone &amp; Related Technology
+            </p>
+            <p class="timeline-institute-sub">
+              Ministry of Electronics and Information Technology
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1ypAp7VDxIru6KizSVUIG1RCDWikfPLsf/view?usp=sharing"
+              class="btn-cert-timeline"
+              target="_blank"
+            >
+              View Certificate
+            </a>
+          </div>
+
+          <a
+            href="#"
+            target="_blank"
+            class="logo-link"
+          >
+            <img
+              src="assets/logos/clg.png"
+              alt="UAV / Drone Program Logo"
+              class="timeline-logo hologram-logo tilt-logo"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- MATLAB Onramp -->
+      <div class="timeline-item glass-panel">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content timeline-align-right">
+          <div class="timeline-text">
+            <span class="timeline-date">2024</span>
+            <h3 class="timeline-title">MATLAB Onramp</h3>
+            <p class="timeline-institute">
+              MathWorks
+            </p>
+            <p class="timeline-institute-sub">
+              Online Training Course
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1kN9tvNCIRp3p1jDZI5HWYRrC533n5BLM/view?usp=sharing"
+              class="btn-cert-timeline"
+              target="_blank"
+            >
+              View Certificate
+            </a>
+          </div>
+
+          <a
+            href="https://matlabacademy.mathworks.com/"
+            target="_blank"
+            class="logo-link"
+          >
+            <img
+              src="assets/logos/mat.png"
+              alt="MathWorks Logo"
+              class="timeline-logo hologram-logo tilt-logo"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- POSITIONS -->
+    <section id="positions" class="section positions reveal-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Positions of Responsibility</h2>
+          <p class="section-subtitle">Beyond the classroom.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item glass-panel">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Aug 2025 – Present</span>
+              <h3 class="timeline-title">Placement Coordinator</h3>
+              <p class="timeline-institute">
+                Indian Institute of Information Technology Design and Manufacturing, Kurnool
+              </p>
+              <p class="timeline-loc">
+                <i class="fas fa-map-marker-alt"></i> Kurnool, Andhra Pradesh, India
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-panel">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jan 2025 – Present</span>
+              <h3 class="timeline-title">Member</h3>
+              <p class="timeline-institute">Electronics Club, IIIT Kurnool</p>
+              <p class="timeline-loc">
+                <i class="fas fa-map-marker-alt"></i> Kurnool, Andhra Pradesh, India
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-panel">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jan 2024 – Feb 2024</span>
+              <h3 class="timeline-title">Event Management Coordinator</h3>
+              <p class="timeline-institute">Solasta Fest, IIIT Kurnool</p>
+              <p class="timeline-loc">
+                <i class="fas fa-map-marker-alt"></i> Kurnool, Andhra Pradesh, India
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact reveal-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let’s build something awesome together.</p>
+        </div>
+
+        <div class="contact-content glass-panel">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Surat, Gujarat, India</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>pranjal2004upadhyay@gmail.com</span>
+            </div>
+
+ <!-- Connect With Me (inline icons) -->
+  <div class="info-item connect-inline">
+    <i class="fas fa-user-friends"></i>
+    <span style="font-weight: 600;">Connect with Me:</span>
+
+    <a href="https://www.instagram.com/your_insta_id" target="_blank" aria-label="Instagram" class="social-connect-icon">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/your_fb_id" target="_blank" aria-label="Facebook" class="social-connect-icon">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+            
+          </div>
+         <form id="contact-form" class="contact-form">
+  <div class="form-group">
+    <input type="text" id="name" placeholder="Your Name" required />
+  </div>
+  <div class="form-group">
+    <input type="email" id="email" placeholder="Your Email" required />
+  </div>
+  <div class="form-group">
+    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary btn-glow">
+    <i class="fas fa-paper-plane"></i> Send Message
+  </button>
+</form>
+
+<p id="form-status" style="margin-top:10px;"></p>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      &copy; 2025 Pranjal Upadhyay. All rights reserved.
+    </div>
+
+    <div class="footer-center">
+      <span class="made-india">
+        Made with <span style="color: #ef4444;">&hearts;</span> in 
+        <span class="tricolor">India</span>
+      </span>
+    </div>
+
+    <div class="footer-right social-links">
+      <a href="https://github.com/upadhyaypranjal" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/pranjalupadhyay0142" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:pranjal2004upadhyay@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- Scroll to top -->
+  <a href="#home" class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- App Logic Script — Single Correct Copy -->
+  <script src="scripts/app.js" defer></script>
+
+</body>
+</html>

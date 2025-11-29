@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Me | Pranjal Upadhyay</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+
+  <style>
+    /* === INTERNAL CSS FIX FOR LAYOUT === */
+    
+    .hire-section {
+      display: flex;
+      flex-direction: column; /* Stacks boxes vertically */
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;      /* Full screen height */
+      gap: 0.8rem;            /* Tiny gap between main card and social card */
+      padding: 1rem;
+      box-sizing: border-box;
+      overflow: hidden;       /* Prevents scrolling */
+    }
+
+    /* === TOP CARD STYLES === */
+    .hire-card {
+       /* Inherits from your main.css */
+    }
+
+    /* === BOTTOM CARD (SOCIAL) STYLES === */
+    .hire-social-card {
+      max-width: 320px;       /* VERY COMPACT WIDTH */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      padding: 0.8rem;        /* Minimal padding inside the box */
+      border-radius: 12px;
+    }
+
+    /* === VERY SMALL BUTTONS === */
+    .social-big-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.8rem; /* Very tight padding */
+      font-size: 0.8rem;      /* Small font size */
+      border-radius: 6px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-main, #333);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .social-big-btn:hover {
+      transform: translateY(-2px);
+      background: white;
+      color: black;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background-gradient"></div>
+  <div id="particles-js"></div>
+  <div class="grid-overlay"></div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <section class="hire-section">
+    
+    <div class="hire-card glass-panel">
+      <h1 class="hire-title">Dear Recruiter,</h1>
+
+      <p class="hire-message">
+        Thank you for showing interest in my profile. I am Pranjal Upadhyay, an Electronics & Communication Engineer specializing in <strong>VLSI Design, Embedded Systems, and IoT</strong>.
+      </p>
+
+      <p class="hire-message">
+        With practical experience gained at the <strong>Semi-Conductor Laboratory (SCL)</strong>, I have developed a strong foundation in hardware design. I am deeply committed to contributing to the growth of the semiconductor sector through precise and efficient engineering.
+      </p>
+
+      <p class="hire-message">
+        I would be grateful for the opportunity to bring my skills and dedication to your esteemed organization. I look forward to the possibility of discussing how I can add value to your team.
+      </p>
+
+      <p class="hire-signature">
+        — Pranjal Upadhyay
+      </p>
+
+      <div class="hire-buttons">
+        <a href="https://drive.google.com/file/d/1lgZmaVYLaAOTyeo5ayMLV41Hxp_TfiZ5/view"
+           class="btn btn-primary btn-glow"
+           target="_blank">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pranjal2004upadhyay@gmail.com"
+   target="_blank"
+   class="btn btn-outline">
+  <i class="fas fa-envelope"></i> Contact Me
+</a>
+
+
+        <a href="index.html" class="btn btn-outline">
+          <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+      </div>
+    </div>
+
+    <div class="hire-social-card glass-panel">
+      <a href="https://www.linkedin.com/in/pranjalupadhyay0142"
+         target="_blank"
+         class="social-big-btn linkedin-btn">
+        <i class="fab fa-linkedin"></i>
+        LinkedIn
+      </a>
+
+      <a href="https://github.com/upadhyaypranjal"
+         target="_blank"
+         class="social-big-btn github-btn">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+    </div>
+
+  </section>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

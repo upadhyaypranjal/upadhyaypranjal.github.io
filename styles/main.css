@@ -2027,3 +2027,15 @@ body {
   background: var(--bg-card);
   z-index: -1;
 }
+
+/* TEMP FIX — Keep navbar always visible on mobile */
+@media (max-width: 720px) {
+  .nav-list {
+    position: static !important;
+    flex-direction: row !important;
+    justify-content: center;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+}

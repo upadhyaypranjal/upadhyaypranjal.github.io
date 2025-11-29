@@ -1,0 +1,615 @@
+/* =========================================================
+   REVEAL ANIMATIONS
+   ========================================================= */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================================
+   HERO ENTRANCE ANIMATIONS
+   ========================================================= */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes orbitPopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes domainGlow {
+  0% {
+    text-shadow: 0 0 0 rgba(56, 189, 248, 0.2);
+  }
+  100% {
+    text-shadow:
+      0 0 12px rgba(56, 189, 248, 0.7),
+      0 0 24px rgba(168, 85, 247, 0.5);
+  }
+}
+
+@keyframes statPop {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Neon flicker welcome */
+.neon-flicker {
+  animation: neonFlicker 4s infinite;
+}
+
+@keyframes neonFlicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow:
+      0 0 12px rgba(56, 189, 248, 0.9),
+      0 0 32px rgba(56, 189, 248, 0.7),
+      0 0 64px rgba(168, 85, 247, 0.5);
+    opacity: 1;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    opacity: 0.75;
+  }
+}
+
+/* Logo glow */
+@keyframes logoGlow {
+  0% {
+    filter: drop-shadow(0 0 6px #22d3ee);
+  }
+  100% {
+    filter: drop-shadow(0 0 18px #d946ef);
+  }
+}
+
+/* Loader */
+@keyframes loaderPulse {
+  from {
+    transform: scaleY(0.6);
+    opacity: 0.4;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* Orbit spin */
+@keyframes orbitRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hero sequencing hookup */
+body.page-loaded .hero-greeting {
+  animation: heroFadeUp 0.55s ease-out forwards;
+}
+
+body.page-loaded .hero-title.gradient-text {
+  animation:
+    heroFadeUp 0.65s ease-out forwards,
+    gradientFlow 4s linear infinite;
+  animation-delay: 0.08s;
+}
+
+body.page-loaded .hero-subtitle {
+  animation: heroFadeUp 0.7s ease-out forwards;
+  animation-delay: 0.16s;
+}
+
+body.page-loaded .hero-subtitle .accent {
+  animation: domainGlow 2.8s ease-in-out infinite alternate;
+}
+
+body.page-loaded .hero-tagline {
+  animation: heroFadeUp 0.8s ease-out forwards;
+  animation-delay: 0.24s;
+}
+
+body.page-loaded .hero-socials {
+  animation: heroFadeUp 0.85s ease-out forwards;
+  animation-delay: 0.32s;
+}
+
+body.page-loaded .hero-buttons {
+  animation: heroFadeUp 0.9s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+body.page-loaded .hero-stats .stat-card {
+  opacity: 0;
+  animation: statPop 0.6s ease-out forwards;
+}
+
+body.page-loaded .hero-stats .stat-card:nth-child(1) {
+  animation-delay: 0.48s;
+}
+body.page-loaded .hero-stats .stat-card:nth-child(2) {
+  animation-delay: 0.58s;
+}
+body.page-loaded .hero-stats .stat-card:nth-child(3) {
+  animation-delay: 0.68s;
+}
+body.page-loaded .hero-stats .stat-card:nth-child(4) {
+  animation-delay: 0.78s;
+}
+
+body.page-loaded .hero-visual .neon-orbit {
+  opacity: 0;
+  animation: orbitPopIn 0.8s ease-out forwards;
+  animation-delay: 0.45s;
+}
+
+/* Profile image subtle motion */
+.profile-image {
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+/* Rotating skill text */
+.rotating-skill {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent);
+  display: inline-block;
+  min-width: 220px;
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.7);
+}
+
+.fade {
+  animation: fadeRotate 1.8s ease-in-out;
+}
+/* Slow continuous rotation for profile image */
+.profile-image {
+  animation: slowSpin 22s linear infinite;
+  transform-origin: center;
+}
+
+/* Keyframes for a smooth full rotation */
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeRotate {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.97);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.97);
+  }
+}
+
+/* =========================================================
+   FULL-PAGE CYBER / SEMICONDUCTOR BACKGROUND LAYERS
+   (stacked UNDER .background-gradient from main.css)
+   ========================================================= */
+
+/* Base full-screen gradient (lowest) */
+#fullscreen-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  pointer-events: none;
+  background: radial-gradient(circle at center, #001529 0%, #000a14 100%);
+  overflow: hidden;
+}
+
+/* Silicon Wafer Layer */
+.wafer-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -9;
+  pointer-events: none;
+  background:
+    repeating-radial-gradient(
+      circle at center,
+      rgba(34, 211, 238, 0.05) 0%,
+      rgba(34, 211, 238, 0.05) 4px,
+      rgba(236, 72, 153, 0.05) 5px,
+      transparent 8px
+    );
+  filter: blur(2px);
+  opacity: 0.2;
+  animation: waferRotate 90s linear infinite, waferShine 6s linear infinite alternate;
+}
+
+/* Chip Die Layout Grid */
+.die-circuits {
+  position: fixed;
+  inset: 0;
+  z-index: -8;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(0, 255, 255, 0.07) 2px, transparent 2px),
+    linear-gradient(rgba(0, 255, 255, 0.07) 2px, transparent 2px);
+  background-size: 65px 65px;
+  mask-image: radial-gradient(circle at center, black 45%, transparent 70%);
+  opacity: 0.25;
+  animation: diePulse 14s ease-in-out infinite alternate;
+}
+
+/* Metal Routing Layer (fine wiring) */
+.metal-routing {
+  position: fixed;
+  inset: 0;
+  z-index: -7;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(236, 72, 153, 0.09) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(34, 211, 238, 0.09) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.15;
+  mix-blend-mode: screen;
+  animation: routingDrift 55s linear infinite;
+}
+
+/* Die Labels */
+.die-circuits::after {
+  content: "90nm • 180nm • CMOS • VLSI";
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  font-size: 0.8rem;
+  letter-spacing: 0.25rem;
+  color: rgba(148, 163, 184, 0.35);
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* Laser Scanner Layer – ABOVE circuit-bg but still behind content */
+.laser-scan {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 0, 80, 0.22) 45%,
+    rgba(0, 255, 255, 0.28) 55%,
+    transparent 100%
+  );
+  opacity: 0.18;
+  mix-blend-mode: screen;
+  animation: scanMove 6s linear infinite;
+}
+
+/* Parallax hooks */
+.wafer-bg,
+.die-circuits,
+.metal-routing,
+.laser-scan {
+  transition: transform 0.18s linear;
+}
+
+/* Keyframes */
+@keyframes waferRotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.28;
+  }
+}
+
+@keyframes waferShine {
+  0% {
+    filter: brightness(0.85);
+  }
+  100% {
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes diePulse {
+  0% {
+    filter: brightness(0.8) blur(0px);
+  }
+  100% {
+    filter: brightness(1.05) blur(1px);
+  }
+}
+
+@keyframes routingDrift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes scanMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* =========================================================
+   BLUE CYBERPUNK CIRCUIT BACKGROUND
+   ========================================================= */
+.cyber-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3; /* above circuit-bg, below laser-scan */
+  pointer-events: none;
+  background: radial-gradient(circle at center, #001529 0%, #000a14 100%);
+  overflow: hidden;
+}
+
+/* Circuit lines */
+.cyber-line {
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: #00aaffcc;
+  box-shadow:
+    0 0 12px #00aaff,
+    0 0 20px #0088cc;
+  animation: scroll-lines 6s linear infinite;
+  opacity: 0.35;
+}
+
+@keyframes scroll-lines {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(120vh);
+  }
+}
+/* Typed Branch Animation Color Update */
+#typed-branch {
+  color: #fff; /* Controls the visible text color */
+  border-right: 2px solid var(--accent-soft); /* Cursor color */
+  font-weight: 500;
+  padding-right: 6px;
+  animation: blinkCursor .75s step-end infinite;
+}
+
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50%     { border-color: var(--accent-soft); }
+}
+#typed-branch {
+  position: relative;
+  border-right: 2px solid var(--accent);
+  padding-right: 6px;
+  animation: blinkCursor .75s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  from { border-color: var(--accent); }
+  to { border-color: transparent; }
+}
+.chip-icon {
+  position: absolute;
+  top: 32%;
+  left: 15%;
+  width: 38px;
+  height: 38px;
+  background: url('assets/icons/chip.svg') no-repeat center/contain;
+  filter: drop-shadow(0 0 8px #22d3ee);
+  animation: chipFloat 6s ease-in-out infinite;
+  opacity: 0.75;
+}
+
+@keyframes chipFloat {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(10deg); }
+}
+.signal-ping {
+  position: absolute;
+  bottom: 18.5%;
+  right: calc(12% + 20px);
+  width: 12px;
+  height: 12px;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: signalPulse 2s linear infinite;
+}
+
+.ping-1 { animation-delay: 0s; }
+.ping-2 { animation-delay: .8s; }
+
+@keyframes signalPulse {
+  from {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+.cyber-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: #00eaff;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  animation:
+    scrollPacket 6s linear infinite;
+}
+
+@keyframes scrollPacket {
+  from { transform: translateY(-50px); opacity: 1; }
+  to { transform: translateY(200px); opacity: 0; }
+}
+/* Floating Chips */
+@keyframes chipFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(10deg);
+  }
+}
+.chip-icon,
+.chip-icon2,
+.chip-icon3 {
+  animation: chipFloat 6s ease-in-out infinite;
+}
+
+/* Tower Signal Burst */
+@keyframes signalPulse {
+  from {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.signal-ping,
+.signal-ping2 {
+  animation: signalPulse 2s linear infinite;
+}
+/* ===========================================
+   FUTURISTIC DOTTED WIRES + CURRENT FLOW ⚡
+   =========================================== */
+.cyber-wires {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Thin dotted PCB wires */
+.wire {
+  position: absolute;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(0, 255, 200, 0.15),
+    rgba(0, 255, 200, 0.15) 6px,
+    transparent 7px,
+    transparent 12px
+  );
+  border-radius: 999px;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 4px rgba(0, 255, 200, 0.35));
+}
+
+/* Wire placement across screen */
+.wire-1 { width: 55%; top: 22%; left: 12%; transform: rotate(3deg); }
+.wire-2 { width: 40%; top: 50%; left: 50%; transform: rotate(-10deg); }
+.wire-3 { width: 72%; top: 72%; left: 6%; }
+.wire-4 { width: 48%; top: 86%; left: 32%; transform: rotate(5deg); }
+
+/* ⚡ Moving current through wires */
+.current {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #30ffc8, #ffffff);
+  filter: drop-shadow(0 0 8px #00ffe1);
+  animation: currentFlow 2.8s linear infinite;
+}
+
+/* Currents match wire positions */
+.current-1 { top: 22%; left: 12%; animation-delay: 0s; }
+.current-2 { top: 50%; left: 50%; animation-delay: .8s; }
+.current-3 { top: 72%; left: 6%;  animation-delay: 1.6s; }
+
+/* Flowing motion */
+@keyframes currentFlow {
+  from { transform: translateX(0); opacity: .9; }
+  to   { transform: translateX(300px); opacity: 0; }
+}
+/* Waving hand emoji animation */
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%; /* pivot point near wrist */
+  animation: waveHand 1.6s ease-in-out infinite;
+}
+
+@keyframes waveHand {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(18deg); }
+  30% { transform: rotate(-14deg); }
+  45% { transform: rotate(18deg); }
+  60% { transform: rotate(-8deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}

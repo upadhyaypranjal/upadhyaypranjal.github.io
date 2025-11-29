@@ -2106,4 +2106,50 @@ body {
 
 
 
+/* NAVBAR BASE LAYOUT */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Show logo properly */
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap; /* Prevent text breaking */
+}
+
+/* MOBILE IMPROVEMENTS */
+@media (max-width: 720px) {
+
+  /* Align logo and buttons in one row */
+  .nav-container {
+    position: relative;
+    padding: 0.8rem 1rem;
+  }
+
+  /* Move resume button to the right of hamburger */
+  .nav-resume-btn {
+    display: inline-flex !important;
+    margin-left: auto;
+    padding: 0.35rem 0.8rem;
+  }
+
+  /* Move hamburger to rightmost position */
+  .nav-toggle {
+    order: 5;
+    margin-left: 0.8rem;
+  }
+
+  /* Keep dropdown clean */
+  .nav-list {
+    width: 200px;
+    right: 1rem;
+    top: 4.2rem;
+  }
+}
+
 

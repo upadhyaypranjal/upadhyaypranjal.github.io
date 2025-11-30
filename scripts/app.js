@@ -334,11 +334,3 @@ form.addEventListener("submit", async (e) => {
     statusText.style.color = "#ff4444";
   }
 });
-
-const navToggle = document.querySelector(".nav-toggle");
-const navList = document.querySelector(".nav-list");
-
-navToggle.addEventListener("click", () => {
-  navList.classList.toggle("open");
-  navToggle.classList.toggle("active");
-});
